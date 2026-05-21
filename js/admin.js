@@ -1,4 +1,4 @@
-const backendURL = "http://localhost:3000";
+const backendURL = "https://team-task-manager-backend-production-85c8.up.railway.app";
 const token = localStorage.getItem("token");
 
 if (!token) {
