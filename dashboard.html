@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Team Task Manager - Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <!-- Sidebar dropdown on the left -->
+    <div class="sidebar">
+      <select id="navMenu" onchange="navigatePage(this.value)">
+        <option value="">-- Navigate --</option>
+        <option value="dashboard.html">Dashboard</option>
+        <option value="admin.html">Admin Panel</option>
+        <option value="signup.html">Signup</option>
+        <option value="index.html">Login / Logout</option>
+      </select>
+    </div>
+
+    <h1>Dashboard</h1>
+  </header>
+
+  <div class="container">
+    <h2>Tasks</h2>
+    <div id="taskContainer" class="task-container"></div>
+  </div>
+
+  <script src="js/dashboard.js"></script>
+</body>
+
+</html>

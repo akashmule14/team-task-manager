@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Team Task Manager - Admin Panel</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Admin Panel</h1>
+  </header>
+
+  <div class="container">
+    <div class="admin-container">
+      <div class="admin-block">
+        <h3>Create Project</h3>
+        <input type="text" id="projectName" placeholder="Project Name">
+        <input type="text" id="projectDescription" placeholder="Project Description">
+        <button onclick="createProject()">Create Project</button>
+      </div>
+
+      <div class="admin-block">
+        <h3>Assign Task</h3>
+        <input type="text" id="taskTitle" placeholder="Task Title">
+        <input type="text" id="taskDescription" placeholder="Task Description">
+
+        <select id="assignedTo"></select>
+        <select id="projectId"></select>
+
+        <button onclick="assignTask()">Assign Task</button>
+      </div>
+    </div>
+
+    <div class="admin-nav">
+      <button onclick="window.location.href='dashboard.html'">Dashboard</button>
+      <button onclick="window.location.href='index.html'">Logout</button>
+    </div>
+  </div>
+
+  <script src="js/admin.js"></script>
+</body>
+</html>

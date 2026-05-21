@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Team Task Manager - Signup</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Team Task Manager</h1>
+  </header>
+
+  <div class="container">
+    <h2>Signup</h2>
+    <form id="signupForm">
+      <input type="text" id="signupName" placeholder="Name" required>
+      <input type="email" id="signupEmail" placeholder="Email" required>
+      <input type="password" id="signupPassword" placeholder="Password" required>
+      <select id="signupRole">
+        <option value="Member">Member</option>
+        <option value="Admin">Admin</option>
+      </select>
+      <button type="submit">Signup</button>
+    </form>
+    <p>Already registered? <a href="index.html">Login here</a></p>
+  </div>
+
+  <script src="js/auth.js"></script>
+</body>
+</html>
